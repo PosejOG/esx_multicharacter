@@ -7,23 +7,13 @@ Config.CanDelete = false
 if IsDuplicityVersion() then
     -- This is the default number of slots for EVERY player
     -- If you want to manage extra slots for specific players you can do it by using '/setslots' and '/remslots' commands
-    Config.Slots = 4
-    --------------------
-
-    -- Text to prepend to each character (char#:identifier) - keep it short
+    Config.Slots = 2 -- U can add max two char remember this 
     Config.Prefix = "char"
 else
-    -- Sets the location for the character selection scene
-    -- To set the spawn location for new characters, modify the default value in the users SQL table
     Config.Spawn = {
-        { x = -284.2856, y = 562.4627, z = 172.9182, w = 19.9895 },
+        { x = -284.2856, y = 562.4627, z = 172.9182, w = 19.9895 }, --- Spawn location
     }
-    --------------------
-
-    -- Do not use unless you are prepared to adjust your resources to correctly reset data
-    -- Information: https://github.com/thelindat/esx_multicharacter#relogging
     Config.Relog = true
-    --------------------
 
     -- Default appearance for new characters
     Config.Default = {
